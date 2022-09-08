@@ -33,9 +33,8 @@ body {
 .header{
   font-family: 'Signika Negative';
 }
-@media screen and (max-width: 1200px) {
-  .qty{
-    padding: 0 0;
-
+@media (min-width: 300px) {
+  .qty.form-control{
+    padding:0;
   }
 }
