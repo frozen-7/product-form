@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+<body>
+    <div class="px-4 px-lg-0">
+        <div class="container pt-5 pb-3 text-center">
+          <h2 class="header">Product Order Form</h2><hr>
+        </div>
+      
+        <div class="pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="main col-lg-8 p-5 py-4 bg-white rounded shadow-sm mb-5">
+      
+                <!-- Shopping cart table -->
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="heading border-0 bg-light">
+                          <div class="p-2 px-3 text-uppercase">Product</div>
+                        </th>
+                        <th scope="col" class="heading border-0 px-5 bg-light">
+                          <div class="py-2 text-uppercase">Price</div>
+                        </th>
+                        <th scope="col" class="heading border-0 bg-light">
+                          <div class="py-2 px-4 text-center text-uppercase">Quantity</div>
+                        </th>
+                        <th scope="col" class="heading border-0 bg-light">
+                          <div class="py-2 text-uppercase">Total</div>
+                        </th>
+                        <th scope="col" class="heading text-center border-0 bg-light">
+                          <div class="py-2 text-uppercase">Remove</div>
+                        </th>
+                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" class="border-0">
+                          <div class="p-2">
+                            <div class="ml-3 d-inline-block align-middle">
+                              <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Red Rice</a></h5>
+                              <span class="text-muted font-weight-normal font-italic d-block">Organic red rice, Unit: Kg</span>
+                            </div>
+                          </div>
+                        </th>
+                        <td class="px-5 align-middle"><strong>₹180</strong></td>
+                        <td class="align-middle p-0">
+                          <div class="qty input-group px-4">
+                            <span class="input-group-btn">
+                              <button type="button" class="minus btn bg-white btn-number border-0" data-type="minus" data-field="quant[1]">
+                                <span>
+                                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                 </span>
+                              </button>
+                            </span>
+                            
+                              <input type="text" name="quant[1]" class="qty text-center form-control input-number border-0" value="1" min="1" max="10">
+                          
+                            <span class="input-group-btn">
+                              <button type="button"id="plus" class="btn bg-white btn-number border-0" data-type="plus" data-field="quant[1]">
+                                <span>
+                                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                </span>
+                              </button>
+                            </span>
+                            </div>
+                        
+                        </td>
+                        <td class="border-0 align-middle"><strong>₹180</strong></td>    
+                        <td class="align-middle text-center">
+                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path fill="rgba(31, 30, 30, 0.758)" d="M4 8h16v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8zm3-3V3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2h5v2H2V5h5zm2-1v1h6V4H9zm0 8v6h2v-6H9zm4 0v6h2v-6h-2z"></path></g></svg>
+                        </td> 
+                       </tr>
+
+                      <tr>
+                        <th scope="row">
+                          <div class="p-2">
+                            <div class="ml-3 d-inline-block align-middle">
+                              <h5 class="mb-0"><a href="#" class="text-dark d-inline-block">Brown Rice</a></h5>
+                              <span class="text-muted font-weight-normal font-italic">500 gm</span>
+                            
+                            </div>
+                          </div>
+                        </th>
+                        <td class="align-middle px-5"><strong>₹50</strong></td>
+                        <td class="align-middle px-4">
+                          <div class="input-group">
+                            <span class="input-group-btn">
+                              <button type="button" class="btn bg-white btn-number border-0" data-type="minus" data-field="quant[1]">
+                                <span>
+                                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                 </span>
+                              </button>
+                            </span>
+                            
+                              <input type="text" name="quant[1]" class="qty text-center form-control input-number border-0" value="2" min="1" max="10">
+                          
+                            <span class="input-group-btn">
+                              <button type="button" class="btn bg-white btn-number border-0" data-type="plus" data-field="quant[1]">
+                                <span>
+                                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                </span>
+                              </button>
+                            </span>
+                            </div>
+                            <td class="border-0 align-middle"><strong>₹100</strong></td> 
+                            <td class="align-middle text-center">
+                              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path fill="rgba(31, 30, 30, 0.758)" d="M4 8h16v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8zm3-3V3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2h5v2H2V5h5zm2-1v1h6V4H9zm0 8v6h2v-6H9zm4 0v6h2v-6h-2z"></path></g></svg>
+                            </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <div class="p-2">
+                            <div class="ml-3 d-inline-block align-middle">
+                              <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Peanut Butter</a></h5>
+                              <span class="text-muted font-weight-normal font-italic">400 gm</span>
+                            </div>
+                          </div>
+                          <td class=" px-5 align-middle"><strong>₹250</strong></td>
+                          <td class="align-middle px-4">
+                            <div class="input-group">
+                              <span class="input-group-btn">
+                                <button type="button" class="btn bg-white btn-number border-0" data-type="minus" data-field="quant[1]">
+                                  <span>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                   </span>
+                                </button>
+                              </span>
+                              
+                                <input type="text" name="quant[1]" class="qty text-center form-control input-number border-0" value="1" min="1" max="10">
+                            
+                              <span class="input-group-btn">
+                                <button type="button" class="btn bg-white btn-number border-0" data-type="plus" data-field="quant[1]">
+                                  <span>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                  </span>
+                                </button>
+                              </span>
+                              </div>
+                          
+                          </td>
+                          <td class="border-0 align-middle"><strong>₹250</strong></td> 
+                          <td class="align-middle text-center">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path fill="rgba(31, 30, 30, 0.758)" d="M4 8h16v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8zm3-3V3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2h5v2H2V5h5zm2-1v1h6V4H9zm0 8v6h2v-6H9zm4 0v6h2v-6h-2z"></path></g></svg>
+                          </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <div class="p-2">
+                            <div class="ml-3 d-inline-block align-middle">
+                              <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Flex Seeds Oil</a></h5>
+                              <span class="text-muted font-weight-normal font-italic">200 ml</span>
+                            </div>
+                          </div>
+                          <td class=" px-5 align-middle"><strong>₹225</strong></td>
+                          <td class="align-middle px-4">
+                            <div class="input-group">
+                              <span class="input-group-btn">
+                                <button type="button" class="btn bg-white btn-number border-0" data-type="minus" data-field="quant[1]">
+                                  <span>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                   </span>
+                                </button>
+                              </span>
+                              
+                                <input type="text" name="quant[1]" class="qty text-center form-control input-number border-0" value="0" min="1" max="10">
+                            
+                              <span class="input-group-btn">
+                                <button type="button" class="btn bg-white btn-number border-0" data-type="plus" data-field="quant[1]">
+                                  <span>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                  </span>
+                                </button>
+                              </span>
+                              </div>
+                          
+                          </td>
+                          <td class="border-0 align-middle"><strong>₹0</strong></td> 
+                          <td class="align-middle text-center">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path fill="rgba(31, 30, 30, 0.758)" d="M4 8h16v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8zm3-3V3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2h5v2H2V5h5zm2-1v1h6V4H9zm0 8v6h2v-6H9zm4 0v6h2v-6h-2z"></path></g></svg>
+                          </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <div class="p-2">
+                            <div class="ml-3 d-inline-block align-middle">
+                              <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Homemade Garlic Pickle</a></h5>
+                              <span class="text-muted font-weight-normal font-italic">400 gm</span>
+                            </div>
+                          </div>
+                          <td class=" px-5 align-middle"><strong>₹275</strong></td>
+                          <td class="align-middle px-4">
+                            <div class="input-group">
+                              <span class="input-group-btn">
+                                <button type="button" class="btn bg-white btn-number border-0" data-type="minus" data-field="quant[1]">
+                                  <span>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                   </span>
+                                </button>
+                              </span>
+                              
+                                <input type="text" name="quant[1]" class="qty text-center form-control input-number border-0" value="0" min="1" max="10">
+                            
+                              <span class="input-group-btn">
+                                <button type="button" class="btn bg-white btn-number border-0" data-type="plus" data-field="quant[1]">
+                                  <span>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                  </span>
+                                </button>
+                              </span>
+                              </div>
+                          
+                          </td>
+                          <td class="border-0 align-middle"><strong>₹0</strong></td> 
+                          <td class="align-middle text-center">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path fill="rgba(31, 30, 30, 0.758)" d="M4 8h16v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8zm3-3V3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2h5v2H2V5h5zm2-1v1h6V4H9zm0 8v6h2v-6H9zm4 0v6h2v-6h-2z"></path></g></svg>
+                          </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">
+                          <div class="p-2">
+                            <div class="ml-3 d-inline-block align-middle">
+                              <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Kulath Dal</a></h5>
+                              <span class="text-muted font-weight-normal font-italic">From Chamba, Unit: Kg</span>
+                            </div>
+                          </div>
+                          <td class=" px-5 align-middle"><strong>₹300</strong></td>
+                          <td class="align-middle px-4">
+                            <div class="input-group">
+                              <span class="input-group-btn">
+                                <button type="button" class="btn bg-white btn-number border-0" data-type="minus" data-field="quant[1]">
+                                  <span>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                   </span>
+                                </button>
+                              </span>
+                              
+                                <input type="text" name="quant[1]" class="qty text-center form-control input-number border-0" value="0" min="1" max="10">
+                            
+                              <span class="input-group-btn">
+                                <button type="button" class="btn bg-white btn-number border-0" data-type="plus" data-field="quant[1]">
+                                  <span>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                  </span>
+                                </button>
+                              </span>
+                              </div>
+                          
+                          </td>
+                          <td class="border-0 align-middle"><strong>₹0</strong></td> 
+                          <td class="align-middle text-center">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path fill="rgba(31, 30, 30, 0.758)" d="M4 8h16v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8zm3-3V3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2h5v2H2V5h5zm2-1v1h6V4H9zm0 8v6h2v-6H9zm4 0v6h2v-6h-2z"></path></g></svg>
+                          </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">
+                          <div class="p-2">
+                            <div class="ml-3 d-inline-block align-middle">
+                              <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Rajmah</a></h5>
+                              <span class="text-muted font-weight-normal font-italic">500 gm</span>
+                            </div>
+                          </div>
+                          <td class=" px-5 align-middle"><strong>₹150</strong></td>
+                          <td class="align-middle px-4">
+                            <div class="input-group">
+                              <span class="input-group-btn">
+                                <button type="button" class="btn bg-white btn-number border-0" data-type="minus" data-field="quant[1]">
+                                  <span>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                   </span>
+                                </button>
+                              </span>
+                              
+                                <input type="text" name="quant[1]" class="qty text-center form-control input-number border-0" value="0" min="1" max="10">
+                            
+                              <span class="input-group-btn">
+                                <button type="button" class="btn bg-white btn-number border-0" data-type="plus" data-field="quant[1]">
+                                  <span>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                  </span>
+                                </button>
+                              </span>
+                              </div>
+                          
+                          </td>
+                          <td class="border-0 align-middle"><strong>₹0</strong></td> 
+                          <td class="align-middle text-center">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path fill="rgba(31, 30, 30, 0.758)" d="M4 8h16v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8zm3-3V3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2h5v2H2V5h5zm2-1v1h6V4H9zm0 8v6h2v-6H9zm4 0v6h2v-6h-2z"></path></g></svg>
+                          </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">
+                          <div class="p-2">
+                            <div class="ml-3 d-inline-block align-middle">
+                              <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Flex Seeds</a></h5>
+                              <span class="text-muted font-weight-normal font-italic">250 gm</span>
+                            </div>
+                          </div>
+                          <td class=" px-5 align-middle"><strong>₹150</strong></td>
+                          <td class="align-middle px-4">
+                            <div class="input-group">
+                              <span class="input-group-btn">
+                                <button type="button" class="btn bg-white btn-number border-0" data-type="minus" data-field="quant[1]">
+                                  <span>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                   </span>
+                                </button>
+                              </span>
+                              
+                                <input type="text" name="quant[1]" class="qty text-center form-control input-number border-0" value="0" min="1" max="10">
+                            
+                              <span class="input-group-btn">
+                                <button type="button" class="btn bg-white btn-number border-0" data-type="plus" data-field="quant[1]">
+                                  <span>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path  d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+                                  </span>
+                                </button>
+                              </span>
+                              </div>
+                          
+                          </td>
+                          <td class="border-0 align-middle"><strong>₹0</strong></td> 
+                          <td class="align-middle text-center">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path fill="rgba(31, 30, 30, 0.758)" d="M4 8h16v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8zm3-3V3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2h5v2H2V5h5zm2-1v1h6V4H9zm0 8v6h2v-6H9zm4 0v6h2v-6h-2z"></path></g></svg>
+                          </td>
+                      </tr>
+                      
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+          
+             <div class="bar d-flex flex-column align-items-center justify-content-center text-center col-lg-4 p-5 py-4 rounded shadow-sm mb-5">
+                <div class="border-bottom rounded-pill px-4 py-3 text-uppercase font-weight-bold">Order summary </div>
+                <div class="p-4">
+                  <p class="font-italic mb-2">(Min. Order Value = ₹ 800)</p>
+
+                  <ul class="list-unstyled mb-4">
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="">Order Subtotal </strong><strong>₹ 530</strong></li>
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="">Shipping and handling</strong><strong>₹ 50</strong></li>
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="">Total</strong>
+                      <h5 class="font-weight-bold">₹ 580</h5>
+                    </li>
+                  </ul>
+                  <p class="font-weight-normal mb-2 text-danger">Your cart value is less than the minimum order value.</p>
+                  <div class=" rounded-pill py-3 text-uppercase font-weight-bold">Coupon code</div>
+                 
+                    <div class="input-group mb-4 rounded-pill">
+                      <input type="text" aria-describedby="button-addon3" class="form-control border-0">
+                      <div class="input-group-append border-0">
+                        <button id="button-addon3" type="button" class="btn btn-dark px-2 rounded-pill"><i class="fa fa-gift mr-2"></i>Apply coupon</button>
+                      </div>
+                    </div>
+                    <div class="d-flex align-content-center justify-content-center">
+                    <a href="#" class="btn btn-mini btn-danger rounded-pill px-3 mr-2">Clear Cart</a>
+                  <a href="./shipping.html" class="btn checkout rounded-pill px-3">Proceed to checkout</a>
+                </div>
+                </div>
+             
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+     
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+

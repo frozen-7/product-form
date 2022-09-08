@@ -1,0 +1,41 @@
+
+body {
+    background: #ebebeb;
+    background: -webkit-linear-gradient(to right, #f3f1ef, #62ef81);
+    background: linear-gradient(120deg,#fcf9c6b6, #FCF9C6, #9ad65ae5, #b2ca38, #FCF9C6, #fcf9c6b1);
+    min-height: 100vh;
+  }
+  .display-4{
+    color: #000;
+  }
+.heading{
+  color: rgb(108, 103, 103);
+}
+.bar{
+  background-color: #B4E197;
+  box-shadow: 7px 8px 10px rgba(0, 0, 0, 0.372);
+}
+.main{
+  box-shadow: -7px 8px 10px rgba(0, 0, 0, 0.372);
+}
+.checkout{
+  background-color: #508808df;
+  color: #fff;
+}
+.checkout:hover{
+  color:#fff;
+  background-color:#386005df ;
+}
+.form-group{
+  color: #356603;
+ font-weight: 500;
+}
+.header{
+  font-family: 'Signika Negative';
+}
+@media screen and (max-width: 1200px) {
+  .qty{
+    padding: 0 0;
+
+  }
+}
